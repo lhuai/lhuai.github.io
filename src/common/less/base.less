@@ -1,0 +1,76 @@
+@import "./variable.less";
+
+body,
+html {
+  user-select: auto;
+  margin:0 !important;
+}
+
+body{
+  font-size:@fontSize;
+  color: @colorText;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  word-break:break-all;
+  font-size: @fontSize;
+}
+
+html, body, div, span, applet, button, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+ol,ul {
+  list-style: none;
+}
+img{
+  vertical-align: middle;
+}
+a{
+  color: @mainColor;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active{
+      text-decoration: none;
+      color: @mainColor;
+      outline: none;
+  }
+}
+
+// 元素上下左右居中
+.center-x-y {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overflow-txt {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.shadow-box {
+  padding: 14px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(215, 215, 215, 0.7);
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.block {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.section {
+  padding: 60px 30px;
+}
