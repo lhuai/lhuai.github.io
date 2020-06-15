@@ -36,5 +36,6 @@ module.exports = {
     config.plugins
       .delete('preload-index')
       .delete('prefetch-index');
-  }
+  },
+  publicPath: './'
 }
